@@ -1,0 +1,40 @@
+# ChimeraX 7ZBH setup: open biological assembly and apply a clean base style.
+# Run from the bb0789-ftsh/ directory:
+#   open chimerax/01_open_clean_label_7zbh.cxc
+
+close
+open structures/7zbh_bioassembly.cif
+
+delete solvent
+hide atoms
+cartoon
+
+# Protein author chains in the 7ZBH BB0789 hexamer.
+color /A #8CA7C0
+color /B #C7B37A
+color /D #8CBF9F
+color /F #C08CA8
+color /I #A795C8
+color /K #D09A72
+
+# Ligands and ions.
+show :ADP atoms
+style :ADP stick
+color :ADP #F0B429
+show :ZN atoms
+style :ZN sphere
+color :ZN #7A7A7A
+
+# Quiet, publication-friendly rendering.
+surface
+transparency 82 surfaces
+lighting soft
+set bgColor white
+graphics silhouettes true
+camera orthographic
+size 2400 1800
+view orient
+turn y 18
+turn x -8
+zoom 0.78
+

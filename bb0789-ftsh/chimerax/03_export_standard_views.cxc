@@ -1,0 +1,46 @@
+# ChimeraX 7ZBH export views.
+# Run after 01_open_clean_label_7zbh.cxc and 02_residue_panel.cxc.
+
+2dlabels delete
+view bb0789_panel_base
+2dlabels create title text "7ZBH BB0789 FtsH biological assembly: functional residue panel" xpos 0.03 ypos 0.95 size 24 color black
+2dlabels create key1 text "Gold: ADP / ATPase motor residues" xpos 0.03 ypos 0.89 size 18 color #9A6A00
+2dlabels create key2 text "Red: Zn catalytic / HEXXH site" xpos 0.03 ypos 0.85 size 18 color #B62020
+2dlabels create key3 text "Green: protease-domain hexamer interface" xpos 0.03 ypos 0.81 size 18 color #3F6D1E
+2dlabels create key4 text "Purple: missing or weak loops / anchors" xpos 0.03 ypos 0.77 size 18 color #6D2E8A
+view name hexamer_overview
+save bb0789_7zbh_01_hexamer_overview.png width 2400 height 1800 supersample 3
+
+2dlabels delete
+focus :ADP | /A:211-220,245-247,269-274,329-332,379
+zoom 1.25
+2dlabels create title text "ADP-bound AAA+ motor: P-loop, Walker B, pore/threading target, FVG, Ala379" xpos 0.03 ypos 0.95 size 22 color black
+view name adp_motor
+save bb0789_7zbh_02_adp_motor.png width 2400 height 1800 supersample 3
+
+2dlabels delete
+focus :ZN | /A:434-438,510
+zoom 1.55
+2dlabels create title text "Zinc catalytic site: His434, His438, Asp510 and HEXXH region" xpos 0.03 ypos 0.95 size 22 color black
+view name zinc_catalytic_site
+save bb0789_7zbh_03_zinc_catalytic_site.png width 2400 height 1800 supersample 3
+
+2dlabels delete
+focus /A,B,D,F,I,K:490,493,508,561,568
+zoom 1.05
+2dlabels create title text "Protease-domain hexamer-interface panel: Tyr490, Tyr493, Gln508, Asp561, Lys568" xpos 0.03 ypos 0.95 size 22 color black
+view name hexamer_interface
+save bb0789_7zbh_04_hexamer_interface.png width 2400 height 1800 supersample 3
+
+2dlabels delete
+view bb0789_panel_base
+focus /A,B,D,F,I,K:277-287,306-310,396-404,414-423,461-475,538-553
+zoom 1.0
+2dlabels create title text "Missing / weak loops: 277-287, 306-310, 396-404, 414-423, 461-475, 538-553" xpos 0.03 ypos 0.95 size 22 color black
+2dlabels create note text "Unmodeled residues have no atoms; purple labels mark available flanking anchors." xpos 0.03 ypos 0.90 size 18 color #6D2E8A
+view name missing_weak_loops
+save bb0789_7zbh_05_missing_weak_loops.png width 2400 height 1800 supersample 3
+
+2dlabels delete
+view hexamer_overview
+

@@ -1,0 +1,10 @@
+feature,residues,color,triage_note
+ADP_P_loop,"211-220; core 215,216,218,219,220",gold,"Primary nucleotide-binding / ATPase motor site"
+ADP_Ala379,379,gold,"Additional nucleotide-site geometry contact"
+Walker_B,"269-274; Asp271",gold,"Motor chemistry; inspect before perturbing"
+Pore_threading_target,329-332,gold,"Working threading target; sequence maps to RPDV"
+FVG_motif,245-247,gold,"Exact FVG occurrence in 7ZBH"
+Zn_catalytic_site,"His434; His438; Asp510",red,"Direct protease catalytic chemistry"
+HEXXH_region,"434-438; His434; Glu435; His438",red,"HEAGH active-site motif region"
+Protease_hexamer_interface,"Tyr490; Tyr493; Gln508; Asp561; Lys568",green,"Assembly / allosteric target zone"
+Missing_weak_loops,"277-287; 306-310; 396-404; 414-423; 461-475; 538-553",purple,"Avoid blind docking into unresolved geometry"
