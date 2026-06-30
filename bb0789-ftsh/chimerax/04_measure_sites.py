@@ -1,7 +1,7 @@
 """ChimeraX helper for BB0789 / 7ZBH residue-panel measurements.
 
-Run inside ChimeraX from the bb0789-ftsh/ directory after opening the model:
-    open chimerax/04_measure_sites.py
+Run inside ChimeraX after opening the model:
+    open C:/BB0789/bb0789-ftsh/chimerax/04_measure_sites.py
 
 The script adds distance monitors for representative chain A ADP contacts and
 Zn coordination. It intentionally keeps to the fixed panel residues used in the

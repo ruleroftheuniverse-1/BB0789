@@ -1,5 +1,6 @@
 # ChimeraX 7ZBH residue panel.
-# Run after 01_open_clean_label_7zbh.cxc.
+# Run after:
+#   open C:/BB0789/bb0789-ftsh/chimerax/01_open_clean_label_7zbh.cxc
 # Residues use author numbering for BB0789 chains A, B, D, F, I, K.
 
 # ADP-binding / ATPase motor:
@@ -38,4 +39,3 @@ label /A:276,288,305,311,395,405,413,424,460,476,537,554 residues height 0.75 co
 label :ADP,ZN residues height 1.0 color black
 
 view name bb0789_panel_base
-

@@ -18,17 +18,16 @@ Source structure: PDB 7ZBH, ATP-dependent zinc metalloprotease FtsH (BB0789) fro
 
 ## Running
 
-From the `bb0789-ftsh/` directory in ChimeraX:
+Use absolute paths in ChimeraX:
 
 ```text
-open chimerax/01_open_clean_label_7zbh.cxc
-open chimerax/02_residue_panel.cxc
-open chimerax/03_export_standard_views.cxc
+open C:/BB0789/bb0789-ftsh/chimerax/01_open_clean_label_7zbh.cxc
+open C:/BB0789/bb0789-ftsh/chimerax/02_residue_panel.cxc
+open C:/BB0789/bb0789-ftsh/chimerax/03_export_standard_views.cxc
 ```
 
 Optional distance helper:
 
 ```text
-open chimerax/04_measure_sites.py
+open C:/BB0789/bb0789-ftsh/chimerax/04_measure_sites.py
 ```
-

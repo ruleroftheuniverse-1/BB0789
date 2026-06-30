@@ -1,9 +1,9 @@
 # ChimeraX 7ZBH setup: open biological assembly and apply a clean base style.
-# Run from the bb0789-ftsh/ directory:
-#   open chimerax/01_open_clean_label_7zbh.cxc
+# Path-stable command:
+#   open C:/BB0789/bb0789-ftsh/chimerax/01_open_clean_label_7zbh.cxc
 
 close
-open structures/7zbh_bioassembly.cif
+open C:/BB0789/bb0789-ftsh/structures/7zbh_bioassembly.cif
 
 delete solvent
 hide atoms
@@ -37,4 +37,3 @@ view orient
 turn y 18
 turn x -8
 zoom 0.78
-
